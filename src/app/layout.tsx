@@ -34,7 +34,10 @@ export default function RootLayout({
       lang="en"
       className={`${plusJakartaSans.variable} ${inter.variable} ${firaCode.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-body bg-white text-slate-900 selection:bg-blue-500/10 selection:text-blue-600">
+      <body
+        suppressHydrationWarning
+        className="min-h-full flex flex-col font-body bg-white text-slate-900 selection:bg-blue-500/10 selection:text-blue-600"
+      >
         {/* GLOBAL NAVIGATION LAYER */}
         <Navbar />
 
